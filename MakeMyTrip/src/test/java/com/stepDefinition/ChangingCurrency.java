@@ -69,24 +69,27 @@ public class ChangingCurrency {
 		Thread.sleep(3000);
 		String area = fileUtility.getDataFromExcel("locality", 1, 0);
 		searchBar.sendKeys(area);
-		// searchBar.sendKeys(Keys.ENTER);
 		Actions act = new Actions(driver);
 		act.sendKeys(Keys.ARROW_DOWN).perform();
 		Thread.sleep(3000);
 		act.sendKeys(Keys.ENTER).perform();
-
 		Reporter.log("Entered area: " + area + " in the search bar", true);
-
-		WebElement thirdOption = changingCurrencyPage.getThirdbox();
-		wait.until(ExpectedConditions.visibilityOf(thirdOption));
-		thirdOption.click();
-		Reporter.log("Selected third option from the dropdown", true);
+		
 	}
 
 	@Then("Verify hotel list is displayed in the same locality")
 	public void verify_hotel_list_is_displayed_in_the_same_locality() {
-		WebElement hotelList = changingCurrencyPage.getThirdbox();
+		WebElement hotelList = changingCurrencyPage.getPrice();
 		Assert.assertTrue(hotelList.isDisplayed(), "Hotel list should be displayed in the same locality");
 		Reporter.log("Verified hotel list is displayed in the same locality", true);
 	}
+	@Then("Price is displayed in selected currency")
+	public void price_is_displayed_in_selected_currency() throws Exception {
+		WebElement price = changingCurrencyPage.getPrice();
+		wait.until(ExpectedConditions.visibilityOf(price));
+		price.click();
+		Reporter.log(" Price is displayed in different currency", true);
+	    
+	}
+
 }

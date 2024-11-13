@@ -34,8 +34,8 @@ public class ChangingCurrencyPage {
     @FindBy(xpath = "//input[@placeholder='Search for locality / hotel name']")
     private WebElement search;
     
-    @FindBy(xpath = "//span[text()='The Berkeley Hotel Pratunam, Bangkok, Thailand']")
-    private WebElement thirdbox;
+    @FindBy(xpath = "(//p[@id='hlistpg_hotel_shown_price'])[1]")
+    private WebElement price;
 
     public WebElement getCurrencyIcon() {
         return currencyIcon;
@@ -65,7 +65,13 @@ public class ChangingCurrencyPage {
         return search;
     }
 
-    public WebElement getThirdbox() {
-        return thirdbox;
-    }
+	public WebDriver getDriver() {
+		return driver;
+	}
+
+	public WebElement getPrice() {
+		return price;
+	}
+
+    
 }

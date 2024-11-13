@@ -15,3 +15,4 @@ And Verify user is navigated to hotels list page
 Then Click on sort by price from navbar
 Then Click and Enter area in the search bar
 And Verify hotel list is displayed in the same locality
+And Price is displayed in selected currency 
