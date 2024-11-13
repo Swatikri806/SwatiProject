@@ -30,7 +30,6 @@ public class FileUtility {
 		FileInputStream fis = new FileInputStream(UtilityConstants.excelPath);
 		Workbook wb = WorkbookFactory.create(fis);
 		String data = wb.getSheet(sheetName).getRow(rowNum).getCell(cellNum).toString();
-		System.out.println("change");
 		wb.close();
 		return data;
 	}
