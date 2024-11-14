@@ -33,7 +33,7 @@ public class HotelSelectionPage {
 		return bangkokPropertyList;
 	}
 
-	@FindBy(xpath = "//label[@for='₹ 4500 - ₹ 8000']")
+	@FindBy(xpath = "//input[@id='₹ 5000 - ₹ 8500']")
     private WebElement price;
     
     @FindBy(xpath = "//img[@class='mapEntry__map']")

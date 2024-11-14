@@ -10,6 +10,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.utilityClasses.FileUtility;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class DriverFactory {
 	public static ThreadLocal<WebDriver>driver=new ThreadLocal();
 
@@ -20,6 +22,7 @@ public class DriverFactory {
 		
 		String url=fileUtility.getDataFromPropertiesFiles("url");
 		if (browserName.equals("chrome")) {
+			
 			driver.set(new ChromeDriver());
 		} else if (browserName.equals("edge")) {
 			driver.set(new EdgeDriver()); 
@@ -39,7 +42,7 @@ public class DriverFactory {
 	
 	public static void quitBrowser()
 	{
-//		if(driver!=null)
-//		driver.get().quit();
+		if(driver!=null)
+		driver.get().quit();
 	}
 }

@@ -26,8 +26,6 @@ public class ChangingCurrency {
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	JavaScriptUtil jsUtil = new JavaScriptUtil(driver);
 
-	
-
 	@Then("Click on Currency button and select one currency")
 	public void click_on_currency_button_and_select_one_currency() {
 		WebElement currencyIcon = changingCurrencyPage.getCurrencyIcon();
