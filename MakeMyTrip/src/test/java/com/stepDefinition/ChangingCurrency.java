@@ -3,7 +3,9 @@ package com.stepDefinition;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -12,6 +14,7 @@ import org.testng.Reporter;
 import com.elementRepository.ChangingCurrencyPage;
 import com.utilPackage.DriverFactory;
 import com.utilityClasses.FileUtility;
+import com.utilityClasses.JavaScriptUtil;
 
 import io.cucumber.java.en.Then;
 import java.time.Duration;
@@ -21,6 +24,9 @@ public class ChangingCurrency {
 	ChangingCurrencyPage changingCurrencyPage = new ChangingCurrencyPage(driver);
 	FileUtility fileUtility = new FileUtility();
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	JavaScriptUtil jsUtil = new JavaScriptUtil(driver);
+
+	
 
 	@Then("Click on Currency button and select one currency")
 	public void click_on_currency_button_and_select_one_currency() {
@@ -83,13 +89,20 @@ public class ChangingCurrency {
 		Assert.assertTrue(hotelList.isDisplayed(), "Hotel list should be displayed in the same locality");
 		Reporter.log("Verified hotel list is displayed in the same locality", true);
 	}
-	@Then("Price is displayed in selected currency")
-	public void price_is_displayed_in_selected_currency() throws Exception {
-		WebElement price = changingCurrencyPage.getPrice();
-		wait.until(ExpectedConditions.visibilityOf(price));
-		price.click();
-		Reporter.log(" Price is displayed in different currency", true);
-	    
-	}
+
+//		for( ; ; ) {
+//			try {
+//				WebElement outerShadowHost = driver.findElement(By.cssSelector("gamitee-button"));
+//			    SearchContext outerShadowRoot = outerShadowHost.getShadowRoot();
+//				WebElement innerShadowHost = outerShadowRoot.findElement(By.cssSelector("joyned-tooltip"));
+//			    SearchContext innerShadowRoot = innerShadowHost.getShadowRoot();
+//			    WebElement shadowElement = innerShadowRoot.findElement(By.cssSelector("span.tooltip-button"));
+//			    shadowElement.click();
+//			    break;
+//			}catch (Exception e) {
+//				
+//			}
+//		}
+		
 
 }
