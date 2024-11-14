@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
+<testng-results ignored="0" total="9" passed="7" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Browser is launched]]>
@@ -81,6 +81,33 @@
     </line>
     <line>
       <![CDATA[Scrolled down to read the reviews and clicked on Helpful icon]]>
+    </line>
+    <line>
+      <![CDATA[Browser is launched]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to the specified URL]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on hotel]]>
+    </line>
+    <line>
+      <![CDATA[User is navigated to hotels page]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Search button]]>
+    </line>
+    <line>
+      <![CDATA[Entered locality: patru in the search bar]]>
+    </line>
+    <line>
+      <![CDATA[Selected the option from the dropdown and clicked to search the hotel]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Ratings of the hotel]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to details of hotel page and clicked on user reviews from navbar]]>
     </line>
     <line>
       <![CDATA[Browser is launched]]>
@@ -182,6 +209,18 @@
       <![CDATA[ User Clicked on Star filter]]>
     </line>
     <line>
+      <![CDATA[User Clicked on Breakfast filter]]>
+    </line>
+    <line>
+      <![CDATA[User Clicked on Swimming Pool filter]]>
+    </line>
+    <line>
+      <![CDATA[User Clicked on Price filter]]>
+    </line>
+    <line>
+      <![CDATA[All filters are applied successfully]]>
+    </line>
+    <line>
       <![CDATA[Browser is launched]]>
     </line>
     <line>
@@ -266,6 +305,9 @@
       <![CDATA[Clicked on BOOK THIS NOW button]]>
     </line>
     <line>
+      <![CDATA[User is navigated to Review your Booking and element is verified]]>
+    </line>
+    <line>
       <![CDATA[Browser is launched]]>
     </line>
     <line>
@@ -296,26 +338,26 @@
       <![CDATA[Browser is closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-11-14T09:39:11 IST" name="Default suite" finished-at="2024-11-14T09:42:42 IST" duration-ms="211544">
+  <suite started-at="2024-11-14T11:48:06 IST" name="Default suite" finished-at="2024-11-14T11:52:25 IST" duration-ms="259111">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-11-14T09:39:11 IST" name="Default test" finished-at="2024-11-14T09:42:42 IST" duration-ms="211544">
+    <test started-at="2024-11-14T11:48:06 IST" name="Default test" finished-at="2024-11-14T11:52:25 IST" duration-ms="259111">
       <class name="com.runners.CucumberRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:39:11 IST" name="setUpClass" finished-at="2024-11-14T09:39:11 IST" duration-ms="626" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:48:06 IST" name="setUpClass" finished-at="2024-11-14T11:48:07 IST" duration-ms="725" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5cf33d25]]>
+                <![CDATA[org.testng.TestRunner@75c589f2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:39:11 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:39:40 IST" duration-ms="28632" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:48:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:48:46 IST" duration-ms="39558" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -379,7 +421,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:39:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:40:07 IST" duration-ms="27639" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:48:46 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:49:21 IST" duration-ms="34829" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -428,7 +470,93 @@
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:40:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:40:40 IST" duration-ms="32273" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:49:21 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:49:50 IST" duration-ms="29030" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate user is able to sort by and read hotel reviews in the hotel details page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Reviews"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <div class="sortBy__dropdownCont">...</div> is not clickable at point (1161, 22). Other element would receive the click: <div class="hsw_inner" id="hsw_inner_components">...</div>
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e11c2cb20af51004b3d53db781796b5, clickElement {id=f.C6C6D1A42E5621ED14CA012566F9C96E.d.5B39F54D7FFF6FA335FBCE133B1BBEED.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52488/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e11c2cb20af51004b3d53db781796b5)] -> xpath: //div[@class='sortBy__dropdownCont']]
+Session ID: 7e11c2cb20af51004b3d53db781796b5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="sortBy__dropdownCont">...</div> is not clickable at point (1161, 22). Other element would receive the click: <div class="hsw_inner" id="hsw_inner_components">...</div>
+  (Session info: chrome=131.0.6778.69)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e11c2cb20af51004b3d53db781796b5, clickElement {id=f.C6C6D1A42E5621ED14CA012566F9C96E.d.5B39F54D7FFF6FA335FBCE133B1BBEED.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52488/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e11c2cb20af51004b3d53db781796b5)] -> xpath: //div[@class='sortBy__dropdownCont']]
+Session ID: 7e11c2cb20af51004b3d53db781796b5
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+at com.stepDefinition.HotelReviews.click_on_sort_by_in_user_rating_reviews_and_select_positive_first_from_dropdown(HotelReviews.java:86)
+at ✽.Click on sort by in User Rating & Reviews and select Positive first from dropdown(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelReviews.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Browser is launched]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to the specified URL]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on hotel]]>
+            </line>
+            <line>
+              <![CDATA[User is navigated to hotels page]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Search button]]>
+            </line>
+            <line>
+              <![CDATA[Entered locality: patru in the search bar]]>
+            </line>
+            <line>
+              <![CDATA[Selected the option from the dropdown and clicked to search the hotel]]>
+            </line>
+            <line>
+              <![CDATA[Clicked on Ratings of the hotel]]>
+            </line>
+            <line>
+              <![CDATA[Navigated to details of hotel page and clicked on user reviews from navbar]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:49:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:50:14 IST" duration-ms="23844" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -441,50 +569,20 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='₹ 4500 - ₹ 8000']"}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519000275ece050d04897e3a59681657, findElement {using=xpath, value=//label[@for='₹ 4500 - ₹ 8000']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63924/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519000275ece050d04897e3a59681657]]>
+              <![CDATA[Price checkbox should be displayed expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='₹ 4500 - ₹ 8000']"}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519000275ece050d04897e3a59681657, findElement {using=xpath, value=//label[@for='₹ 4500 - ₹ 8000']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63924/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519000275ece050d04897e3a59681657
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+              <![CDATA[java.lang.AssertionError: Price checkbox should be displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
 at com.stepDefinition.HotelSelection.select_price_checkbox_and_navigate_to_hotel_list(HotelSelection.java:79)
 at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelSelection.feature:17)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
               <![CDATA[Browser is launched]]>
@@ -521,7 +619,7 @@ at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/g
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:40:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:40:57 IST" duration-ms="17560" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:50:14 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:50:37 IST" duration-ms="23089" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -573,7 +671,7 @@ at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/g
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:40:57 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:41:18 IST" duration-ms="20701" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:50:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:51:15 IST" duration-ms="38245" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -586,50 +684,6 @@ at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/g
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span>...</span> is not clickable at point (104, 470). Other element would receive the click: <div class="appendBottom35">...</div>
-  (Session info: chrome=131.0.6778.69)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60112d5bfd31e8fcbfb9ee7b2c0e1d90, clickElement {id=f.4D829AC7C5B92626460805D2628766C8.d.8912027A677F5CA61919100BBA72E53C.e.513}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53701/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (60112d5bfd31e8fcbfb9ee7b2c0e1d90)] -> xpath: //span[text()='Free Breakfast']]
-Session ID: 60112d5bfd31e8fcbfb9ee7b2c0e1d90]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (104, 470). Other element would receive the click: <div class="appendBottom35">...</div>
-  (Session info: chrome=131.0.6778.69)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60112d5bfd31e8fcbfb9ee7b2c0e1d90, clickElement {id=f.4D829AC7C5B92626460805D2628766C8.d.8912027A677F5CA61919100BBA72E53C.e.513}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53701/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (60112d5bfd31e8fcbfb9ee7b2c0e1d90)] -> xpath: //span[text()='Free Breakfast']]
-Session ID: 60112d5bfd31e8fcbfb9ee7b2c0e1d90
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-at com.elementRepository.MultipleFiltersPage.breakfastFilterClicked(MultipleFiltersPage.java:92)
-at com.stepDefinition.MultipleFilters.user_clicks_on_multiple_filters(MultipleFilters.java:90)
-at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/MultipleFilters.feature:14)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
             <line>
               <![CDATA[Browser is launched]]>
@@ -661,9 +715,21 @@ at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/M
             <line>
               <![CDATA[ User Clicked on Star filter]]>
             </line>
+            <line>
+              <![CDATA[User Clicked on Breakfast filter]]>
+            </line>
+            <line>
+              <![CDATA[User Clicked on Swimming Pool filter]]>
+            </line>
+            <line>
+              <![CDATA[User Clicked on Price filter]]>
+            </line>
+            <line>
+              <![CDATA[All filters are applied successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:41:18 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:41:33 IST" duration-ms="15091" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:51:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:51:31 IST" duration-ms="15539" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -715,7 +781,7 @@ at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/M
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:41:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:42:20 IST" duration-ms="46872" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:51:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:52:03 IST" duration-ms="32478" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -728,50 +794,6 @@ at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/M
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='font24 latoBlack whiteText']"}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2037a52ca6b99a525449ff010e6ed964, findElement {using=xpath, value=//h2[@class='font24 latoBlack whiteText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2037a52ca6b99a525449ff010e6ed964]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='font24 latoBlack whiteText']"}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2037a52ca6b99a525449ff010e6ed964, findElement {using=xpath, value=//h2[@class='font24 latoBlack whiteText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2037a52ca6b99a525449ff010e6ed964
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-at com.stepDefinition.SortByHotels.user_is_navigated_to_review_your_booking(SortByHotels.java:96)
-at ✽.User is navigated to Review your Booking(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/ReviewHotelFromMap.feature:19)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Browser is launched]]>
@@ -821,9 +843,12 @@ at ✽.User is navigated to Review your Booking(file:///C:/Users/swati/git/repos
             <line>
               <![CDATA[Clicked on BOOK THIS NOW button]]>
             </line>
+            <line>
+              <![CDATA[User is navigated to Review your Booking and element is verified]]>
+            </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:42:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T09:42:42 IST" duration-ms="21521" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:52:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-11-14T11:52:24 IST" duration-ms="21110" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -869,7 +894,7 @@ at ✽.User is navigated to Review your Booking(file:///C:/Users/swati/git/repos
             </line>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T09:42:42 IST" name="tearDownClass" finished-at="2024-11-14T09:42:42 IST" duration-ms="549" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.runners.CucumberRunner@38102d01]" started-at="2024-11-14T11:52:24 IST" name="tearDownClass" finished-at="2024-11-14T11:52:25 IST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

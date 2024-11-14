@@ -10,8 +10,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import com.utilityClasses.FileUtility;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-
 public class DriverFactory {
 	public static ThreadLocal<WebDriver>driver=new ThreadLocal();
 

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/3/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 14 09:39:11 IST 2024</td>
+<td>Started on:</td><td>Thu Nov 14 11:48:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>211 seconds (211544 ms)</td>
+<tr><td>Total time:</td><td>259 seconds (259111 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,11 +76,86 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should be able to select price checkbox from filter option", "Selecting hotels for booking"<br/>
-<a href="#Output-121463477" onClick='toggleBox("Output-121463477", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to sort by and read hotel reviews in the hotel details page", "Reviews"<br/>
+<a href="#Output-1746468168" onClick='toggleBox("Output-1746468168", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-121463477" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-121463477">
+<a href="#Output-1746468168" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1746468168">
+Browser is launched<br/>
+Navigated to the specified URL<br/>
+Clicked on hotel<br/>
+User is navigated to hotels page<br/>
+Clicked on Search button<br/>
+Entered locality: patru in the search bar<br/>
+Selected the option from the dropdown and clicked to search the hotel<br/>
+Clicked on Ratings of the hotel<br/>
+Navigated to details of hotel page and clicked on user reviews from navbar<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sortBy__dropdownCont&quot;&gt;...&lt;/div&gt; is not clickable at point (1161, 22). Other element would receive the click: &lt;div class=&quot;hsw_inner&quot; id=&quot;hsw_inner_components&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.69)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e11c2cb20af51004b3d53db781796b5, clickElement {id=f.C6C6D1A42E5621ED14CA012566F9C96E.d.5B39F54D7FFF6FA335FBCE133B1BBEED.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52488/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e11c2cb20af51004b3d53db781796b5)] -&gt; xpath: //div[@class=&apos;sortBy__dropdownCont&apos;]]
+Session ID: 7e11c2cb20af51004b3d53db781796b5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.stepDefinition.HotelReviews.click_on_sort_by_in_user_rating_reviews_and_select_positive_first_from_dropdown(HotelReviews.java:86)
+	at ✽.Click on sort by in User Rating &amp; Reviews and select Positive first from dropdown(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelReviews.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1746468168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746468168'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot;sortBy__dropdownCont&quot;&gt;...&lt;/div&gt; is not clickable at point (1161, 22). Other element would receive the click: &lt;div class=&quot;hsw_inner&quot; id=&quot;hsw_inner_components&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.69)
+Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e11c2cb20af51004b3d53db781796b5, clickElement {id=f.C6C6D1A42E5621ED14CA012566F9C96E.d.5B39F54D7FFF6FA335FBCE133B1BBEED.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52488/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e11c2cb20af51004b3d53db781796b5)] -&gt; xpath: //div[@class=&apos;sortBy__dropdownCont&apos;]]
+Session ID: 7e11c2cb20af51004b3d53db781796b5
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.stepDefinition.HotelReviews.click_on_sort_by_in_user_rating_reviews_and_select_positive_first_from_dropdown(HotelReviews.java:86)
+	at ✽.Click on sort by in User Rating &amp; Reviews and select Positive first from dropdown(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelReviews.feature:13)
+</pre></div></td>
+<td>29</td>
+<td>com.runners.CucumberRunner@38102d01</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should be able to select price checkbox from filter option", "Selecting hotels for booking"<br/>
+<a href="#Output-582479659" onClick='toggleBox("Output-582479659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-582479659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-582479659">
 Browser is launched<br/>
 Navigated to the specified URL<br/>
 Clicked on hotel<br/>
@@ -94,227 +169,21 @@ User is navigated to Bangkok Property hotel list <br/>
 Scrolled down to Price per night in filter option<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for=&apos;₹ 4500 - ₹ 8000&apos;]&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519000275ece050d04897e3a59681657, findElement {using=xpath, value=//label[@for=&apos;₹ 4500 - ₹ 8000&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63924/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519000275ece050d04897e3a59681657
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+<td><div><pre>java.lang.AssertionError: Price checkbox should be displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
 	at com.stepDefinition.HotelSelection.select_price_checkbox_and_navigate_to_hotel_list(HotelSelection.java:79)
 	at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelSelection.feature:17)
-</pre></div><a href='#' onClick='toggleBox("stack-trace121463477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace121463477'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for=&apos;₹ 4500 - ₹ 8000&apos;]&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519000275ece050d04897e3a59681657, findElement {using=xpath, value=//label[@for=&apos;₹ 4500 - ₹ 8000&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63924/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519000275ece050d04897e3a59681657
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+</pre></div><a href='#' onClick='toggleBox("stack-trace582479659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace582479659'><pre>java.lang.AssertionError: Price checkbox should be displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
 	at com.stepDefinition.HotelSelection.select_price_checkbox_and_navigate_to_hotel_list(HotelSelection.java:79)
 	at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelSelection.feature:17)
 </pre></div></td>
-<td>32</td>
-<td>com.runners.CucumberRunner@38102d01</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to select multiple filters", "Selecting multiple filters to view hotel list"<br/>
-<a href="#Output-1617241368" onClick='toggleBox("Output-1617241368", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1617241368" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1617241368">
-Browser is launched<br/>
-Navigated to the specified URL<br/>
-Clicked on hotel<br/>
-User is navigated to hotels page<br/>
-User is able to scroll down to the list of places<br/>
-User is able to click on the specific location for hotels<br/>
-Verified after navigating to the page<br/>
-City entered in popup: Mumbai<br/>
-User is able to Enter city and selected checkin, checkout, room, and guests textfield<br/>
- User Clicked on Star filter<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (104, 470). Other element would receive the click: &lt;div class=&quot;appendBottom35&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.69)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60112d5bfd31e8fcbfb9ee7b2c0e1d90, clickElement {id=f.4D829AC7C5B92626460805D2628766C8.d.8912027A677F5CA61919100BBA72E53C.e.513}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53701/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (60112d5bfd31e8fcbfb9ee7b2c0e1d90)] -&gt; xpath: //span[text()=&apos;Free Breakfast&apos;]]
-Session ID: 60112d5bfd31e8fcbfb9ee7b2c0e1d90
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at com.elementRepository.MultipleFiltersPage.breakfastFilterClicked(MultipleFiltersPage.java:92)
-	at com.stepDefinition.MultipleFilters.user_clicks_on_multiple_filters(MultipleFilters.java:90)
-	at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/MultipleFilters.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1617241368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1617241368'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (104, 470). Other element would receive the click: &lt;div class=&quot;appendBottom35&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.69)
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60112d5bfd31e8fcbfb9ee7b2c0e1d90, clickElement {id=f.4D829AC7C5B92626460805D2628766C8.d.8912027A677F5CA61919100BBA72E53C.e.513}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53701/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (60112d5bfd31e8fcbfb9ee7b2c0e1d90)] -&gt; xpath: //span[text()=&apos;Free Breakfast&apos;]]
-Session ID: 60112d5bfd31e8fcbfb9ee7b2c0e1d90
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at com.elementRepository.MultipleFiltersPage.breakfastFilterClicked(MultipleFiltersPage.java:92)
-	at com.stepDefinition.MultipleFilters.user_clicks_on_multiple_filters(MultipleFilters.java:90)
-	at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/MultipleFilters.feature:14)
-</pre></div></td>
-<td>20</td>
-<td>com.runners.CucumberRunner@38102d01</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to locate hotel from map and book hotel", "Review Booking Hotel from map"<br/>
-<a href="#Output-1972950645" onClick='toggleBox("Output-1972950645", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1972950645" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1972950645">
-Browser is launched<br/>
-Navigated to the specified URL<br/>
-Clicked on hotel<br/>
-User is navigated to hotels page<br/>
-City entered and selected: Ban<br/>
-Check-in date selected: November 20.0<br/>
-Check-out date selected: November 23.0<br/>
-Clicked on Apply button<br/>
-Clicked on Search button<br/>
-User is navigated to Bangkok Property hotel list <br/>
-Clicked on explore on map<br/>
-Clicked on View main areas<br/>
-Clicked on the area option<br/>
-Navigated to hotel list page<br/>
-Clicked on the filtered hotel to view details<br/>
-Clicked on BOOK THIS NOW button<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&apos;font24 latoBlack whiteText&apos;]&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2037a52ca6b99a525449ff010e6ed964, findElement {using=xpath, value=//h2[@class=&apos;font24 latoBlack whiteText&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2037a52ca6b99a525449ff010e6ed964
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at com.stepDefinition.SortByHotels.user_is_navigated_to_review_your_booking(SortByHotels.java:96)
-	at ✽.User is navigated to Review your Booking(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/ReviewHotelFromMap.feature:19)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1972950645", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1972950645'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class=&apos;font24 latoBlack whiteText&apos;]&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.16.1&apos;, revision: &apos;9b4c83354e&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2037a52ca6b99a525449ff010e6ed964, findElement {using=xpath, value=//h2[@class=&apos;font24 latoBlack whiteText&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2037a52ca6b99a525449ff010e6ed964
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at com.stepDefinition.SortByHotels.user_is_navigated_to_review_your_booking(SortByHotels.java:96)
-	at ✽.User is navigated to Review your Booking(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/ReviewHotelFromMap.feature:19)
-</pre></div></td>
-<td>46</td>
+<td>23</td>
 <td>com.runners.CucumberRunner@38102d01</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -326,57 +195,11 @@ Session ID: 2037a52ca6b99a525449ff010e6ed964
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should be able to view map", "Selecting hotels for booking"<br/>
-<a href="#Output-188909616" onClick='toggleBox("Output-188909616", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-188909616" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-188909616">
-Browser is launched<br/>
-Navigated to the specified URL<br/>
-Clicked on hotel<br/>
-User is navigated to hotels page<br/>
-City entered and selected: Ban<br/>
-Check-in date selected: November 20.0<br/>
-Check-out date selected: November 23.0<br/>
-Clicked on Apply button<br/>
-Clicked on Search button<br/>
-User is navigated to Bangkok Property hotel list <br/>
-Clicked on explore on map<br/>
-Clicked on View main areas<br/>
-</div>
-</td>
-<td></td>
-<td>17</td>
-<td>com.runners.CucumberRunner@38102d01</td></tr>
-<tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to enter the budget in the filter section", "Selecting multiple filters to view hotel list"<br/>
-<a href="#Output-590720754" onClick='toggleBox("Output-590720754", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-590720754" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-590720754">
-Browser is launched<br/>
-Navigated to the specified URL<br/>
-Clicked on hotel<br/>
-User is navigated to hotels page<br/>
-User is able to scroll down to the list of places<br/>
-User is able to click on the specific location for hotels<br/>
-Verified after navigating to the page<br/>
-User is able to see Budget option after scrolling<br/>
-Min value entered in popup: 2500<br/>
-Max value entered in popup: 5000<br/>
-Clicked on arrow button<br/>
-All filters are applied successfully<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>com.runners.CucumberRunner@38102d01</td></tr>
-<tr>
 <td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to select Hotels from Hotels page by filtering rating", "Hotels"<br/>
-<a href="#Output-1256374299" onClick='toggleBox("Output-1256374299", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1491467237" onClick='toggleBox("Output-1491467237", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1256374299" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1256374299">
+<a href="#Output-1491467237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1491467237">
 Browser is launched<br/>
 Navigated to the specified URL<br/>
 Clicked on hotel<br/>
@@ -393,11 +216,86 @@ Browser is closed<br/>
 <td>21</td>
 <td>com.runners.CucumberRunner@38102d01</td></tr>
 <tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to change the currency", "Changing Currency"<br/>
-<a href="#Output-527969285" onClick='toggleBox("Output-527969285", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to sort by and read hotel reviews in the hotel details page", "Reviews"<br/>
+<a href="#Output-611890729" onClick='toggleBox("Output-611890729", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-527969285" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-527969285">
+<a href="#Output-611890729" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611890729">
+Browser is launched<br/>
+Navigated to the specified URL<br/>
+Clicked on hotel<br/>
+User is navigated to hotels page<br/>
+Clicked on Search button<br/>
+Entered locality: Goa in the search bar<br/>
+Selected the option from the dropdown and clicked to search the hotel<br/>
+Clicked on Ratings of the hotel<br/>
+Navigated to details of hotel page and clicked on user reviews from navbar<br/>
+Clicked on sort by in User Rating & Reviews and selected Positive first from dropdown<br/>
+Scrolled down to read the reviews and clicked on Helpful icon<br/>
+</div>
+</td>
+<td></td>
+<td>34</td>
+<td>com.runners.CucumberRunner@38102d01</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to locate hotel from map and book hotel", "Review Booking Hotel from map"<br/>
+<a href="#Output-1162128198" onClick='toggleBox("Output-1162128198", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1162128198" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1162128198">
+Browser is launched<br/>
+Navigated to the specified URL<br/>
+Clicked on hotel<br/>
+User is navigated to hotels page<br/>
+City entered and selected: Ban<br/>
+Check-in date selected: November 20.0<br/>
+Check-out date selected: November 23.0<br/>
+Clicked on Apply button<br/>
+Clicked on Search button<br/>
+User is navigated to Bangkok Property hotel list <br/>
+Clicked on explore on map<br/>
+Clicked on View main areas<br/>
+Clicked on the area option<br/>
+Navigated to hotel list page<br/>
+Clicked on the filtered hotel to view details<br/>
+Clicked on BOOK THIS NOW button<br/>
+User is navigated to Review your Booking and element is verified<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>com.runners.CucumberRunner@38102d01</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to select multiple filters", "Selecting multiple filters to view hotel list"<br/>
+<a href="#Output-1723014470" onClick='toggleBox("Output-1723014470", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1723014470" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1723014470">
+Browser is launched<br/>
+Navigated to the specified URL<br/>
+Clicked on hotel<br/>
+User is navigated to hotels page<br/>
+User is able to scroll down to the list of places<br/>
+User is able to click on the specific location for hotels<br/>
+Verified after navigating to the page<br/>
+City entered in popup: Mumbai<br/>
+User is able to Enter city and selected checkin, checkout, room, and guests textfield<br/>
+ User Clicked on Star filter<br/>
+User Clicked on Breakfast filter<br/>
+User Clicked on Swimming Pool filter<br/>
+User Clicked on Price filter<br/>
+All filters are applied successfully<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>com.runners.CucumberRunner@38102d01</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to change the currency", "Changing Currency"<br/>
+<a href="#Output-539857462" onClick='toggleBox("Output-539857462", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-539857462" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-539857462">
 Browser is launched<br/>
 Navigated to the specified URL<br/>
 Clicked on hotel<br/>
@@ -417,29 +315,53 @@ Verified hotel list is displayed in the same locality<br/>
 </div>
 </td>
 <td></td>
-<td>28</td>
+<td>39</td>
 <td>com.runners.CucumberRunner@38102d01</td></tr>
 <tr>
-<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to sort by and read hotel reviews in the hotel details page", "Reviews"<br/>
-<a href="#Output-956448191" onClick='toggleBox("Output-956448191", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to enter the budget in the filter section", "Selecting multiple filters to view hotel list"<br/>
+<a href="#Output-179437727" onClick='toggleBox("Output-179437727", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-956448191" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-956448191">
+<a href="#Output-179437727" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-179437727">
 Browser is launched<br/>
 Navigated to the specified URL<br/>
 Clicked on hotel<br/>
 User is navigated to hotels page<br/>
-Clicked on Search button<br/>
-Entered locality: Goa in the search bar<br/>
-Selected the option from the dropdown and clicked to search the hotel<br/>
-Clicked on Ratings of the hotel<br/>
-Navigated to details of hotel page and clicked on user reviews from navbar<br/>
-Clicked on sort by in User Rating & Reviews and selected Positive first from dropdown<br/>
-Scrolled down to read the reviews and clicked on Helpful icon<br/>
+User is able to scroll down to the list of places<br/>
+User is able to click on the specific location for hotels<br/>
+Verified after navigating to the page<br/>
+User is able to see Budget option after scrolling<br/>
+Min value entered in popup: 2500<br/>
+Max value entered in popup: 5000<br/>
+Clicked on arrow button<br/>
+All filters are applied successfully<br/>
 </div>
 </td>
 <td></td>
-<td>27</td>
+<td>15</td>
+<td>com.runners.CucumberRunner@38102d01</td></tr>
+<tr>
+<td title='com.runners.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Should be able to view map", "Selecting hotels for booking"<br/>
+<a href="#Output-1335946878" onClick='toggleBox("Output-1335946878", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1335946878" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1335946878">
+Browser is launched<br/>
+Navigated to the specified URL<br/>
+Clicked on hotel<br/>
+User is navigated to hotels page<br/>
+City entered and selected: Ban<br/>
+Check-in date selected: November 20.0<br/>
+Check-out date selected: November 23.0<br/>
+Clicked on Apply button<br/>
+Clicked on Search button<br/>
+User is navigated to Bangkok Property hotel list <br/>
+Clicked on explore on map<br/>
+Clicked on View main areas<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
 <td>com.runners.CucumberRunner@38102d01</td></tr>
 </table><p>
 </body>

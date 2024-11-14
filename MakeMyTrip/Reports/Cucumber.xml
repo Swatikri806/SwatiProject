@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="210.43" tests="8" skipped="0" failures="3" errors="0">
-<testcase classname="Changing Currency" name="User is able to change the currency" time="28.516">
+<testsuite name="Cucumber" time="257.844" tests="9" skipped="0" failures="2" errors="0">
+<testcase classname="Changing Currency" name="User is able to change the currency" time="39.405">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
@@ -17,7 +17,7 @@ Then Click and Enter area in the search bar.................................pass
 And Verify hotel list is displayed in the same locality.....................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Reviews" name="Validate user is able to sort by and read hotel reviews in the hotel details page - #1.1" time="27.616">
+<testcase classname="Reviews" name="Validate user is able to sort by and read hotel reviews in the hotel details page - #1.1" time="34.798">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
@@ -31,25 +31,25 @@ Then Click on sort by in User Rating & Reviews and select Positive first from dr
 And Scroll down to read the reviews and Click on Helpful icon...............passed
 ]]></system-out>
 </testcase>
-<testcase classname="Selecting hotels for booking" name="user should be able to select price checkbox from filter option" time="32.256">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//label[@for='₹ 4500 - ₹ 8000']&quot;}
+<testcase classname="Reviews" name="Validate user is able to sort by and read hotel reviews in the hotel details page - #1.2" time="29.011">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;div class=&quot;sortBy__dropdownCont&quot;&gt;...&lt;/div&gt; is not clickable at point (1161, 22). Other element would receive the click: &lt;div class=&quot;hsw_inner&quot; id=&quot;hsw_inner_components&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519000275ece050d04897e3a59681657, findElement {using=xpath, value=//label[@for='₹ 4500 - ₹ 8000']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63924/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519000275ece050d04897e3a59681657">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[@for='₹ 4500 - ₹ 8000']"}
+Command: [7e11c2cb20af51004b3d53db781796b5, clickElement {id=f.C6C6D1A42E5621ED14CA012566F9C96E.d.5B39F54D7FFF6FA335FBCE133B1BBEED.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52488/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e11c2cb20af51004b3d53db781796b5)] -&gt; xpath: //div[@class='sortBy__dropdownCont']]
+Session ID: 7e11c2cb20af51004b3d53db781796b5">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <div class="sortBy__dropdownCont">...</div> is not clickable at point (1161, 22). Other element would receive the click: <div class="hsw_inner" id="hsw_inner_components">...</div>
   (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [519000275ece050d04897e3a59681657, findElement {using=xpath, value=//label[@for='₹ 4500 - ₹ 8000']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63924/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 519000275ece050d04897e3a59681657
+Command: [7e11c2cb20af51004b3d53db781796b5, clickElement {id=f.C6C6D1A42E5621ED14CA012566F9C96E.d.5B39F54D7FFF6FA335FBCE133B1BBEED.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52488}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52488/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (7e11c2cb20af51004b3d53db781796b5)] -> xpath: //div[@class='sortBy__dropdownCont']]
+Session ID: 7e11c2cb20af51004b3d53db781796b5
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -60,13 +60,35 @@ Session ID: 519000275ece050d04897e3a59681657
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
+	at com.stepDefinition.HotelReviews.click_on_sort_by_in_user_rating_reviews_and_select_positive_first_from_dropdown(HotelReviews.java:86)
+	at ✽.Click on sort by in User Rating & Reviews and select Positive first from dropdown(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelReviews.feature:13)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Browser is launched and navigate to the URL...........................passed
+When User is able to click on Hotels link...................................passed
+And Navigate to the Hotels page.............................................passed
+Then Click on Search button.................................................passed
+And Click and Enter 1 in the search bar.....................................passed
+And Select the option from the dropdown and click to search the hotel.......passed
+Then Scroll down and click on Ratings of the hotel..........................passed
+And Navigate to details of hotel page and click on user reviews from navbar.passed
+Then Click on sort by in User Rating & Reviews and select Positive first from dropdown.failed
+And Scroll down to read the reviews and Click on Helpful icon...............skipped
+]]></system-out>
+</testcase>
+<testcase classname="Selecting hotels for booking" name="user should be able to select price checkbox from filter option" time="23.831">
+<failure type="java.lang.AssertionError" message="Price checkbox should be displayed expected [true] but found [false]">
+<![CDATA[java.lang.AssertionError: Price checkbox should be displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
 	at com.stepDefinition.HotelSelection.select_price_checkbox_and_navigate_to_hotel_list(HotelSelection.java:79)
 	at ✽.Select price checkbox and navigate to hotel list(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/HotelSelection.feature:17)
 ]]>
@@ -85,7 +107,7 @@ And Select price checkbox and navigate to hotel list........................fail
 Then user should be able to click on hotel to view the hotel details........skipped
 ]]></system-out>
 </testcase>
-<testcase classname="Selecting hotels for booking" name="User Should be able to view map" time="17.548">
+<testcase classname="Selecting hotels for booking" name="User Should be able to view map" time="23.073">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
@@ -99,46 +121,7 @@ When Click on explore on map................................................pass
 Then click on View main areas...............................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Selecting multiple filters to view hotel list" name="Validate user is able to select multiple filters" time="20.693">
-<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;span&gt;...&lt;/span&gt; is not clickable at point (104, 470). Other element would receive the click: &lt;div class=&quot;appendBottom35&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=131.0.6778.69)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60112d5bfd31e8fcbfb9ee7b2c0e1d90, clickElement {id=f.4D829AC7C5B92626460805D2628766C8.d.8912027A677F5CA61919100BBA72E53C.e.513}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53701/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (60112d5bfd31e8fcbfb9ee7b2c0e1d90)] -&gt; xpath: //span[text()='Free Breakfast']]
-Session ID: 60112d5bfd31e8fcbfb9ee7b2c0e1d90">
-<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span>...</span> is not clickable at point (104, 470). Other element would receive the click: <div class="appendBottom35">...</div>
-  (Session info: chrome=131.0.6778.69)
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60112d5bfd31e8fcbfb9ee7b2c0e1d90, clickElement {id=f.4D829AC7C5B92626460805D2628766C8.d.8912027A677F5CA61919100BBA72E53C.e.513}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53701}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53701/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (60112d5bfd31e8fcbfb9ee7b2c0e1d90)] -> xpath: //span[text()='Free Breakfast']]
-Session ID: 60112d5bfd31e8fcbfb9ee7b2c0e1d90
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.click(Unknown Source)
-	at com.elementRepository.MultipleFiltersPage.breakfastFilterClicked(MultipleFiltersPage.java:92)
-	at com.stepDefinition.MultipleFilters.user_clicks_on_multiple_filters(MultipleFilters.java:90)
-	at ✽.User clicks on multiple filters(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/MultipleFilters.feature:14)
-]]>
-</failure>
+<testcase classname="Selecting multiple filters to view hotel list" name="Validate user is able to select multiple filters" time="38.235">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
@@ -147,11 +130,11 @@ Then Scroll down to the list of places......................................pass
 And Click on the specific location for hotels...............................passed
 And Verify after navigating to the page.....................................passed
 Then Enter city and select checkin, checkout and room and guests textfield..passed
-When User clicks on multiple filters........................................failed
-Then Verify all the filters are applied to the page.........................skipped
+When User clicks on multiple filters........................................passed
+Then Verify all the filters are applied to the page.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Selecting multiple filters to view hotel list" name="User is able to enter the budget in the filter section" time="15.076">
+<testcase classname="Selecting multiple filters to view hotel list" name="User is able to enter the budget in the filter section" time="15.525">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
@@ -165,46 +148,7 @@ And Click on arrow button...................................................pass
 Then Verify all the filters are applied to the page.........................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Review Booking Hotel from map" name="Validate user is able to locate hotel from map and book hotel" time="46.859">
-<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h2[@class='font24 latoBlack whiteText']&quot;}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2037a52ca6b99a525449ff010e6ed964, findElement {using=xpath, value=//h2[@class='font24 latoBlack whiteText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2037a52ca6b99a525449ff010e6ed964">
-<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='font24 latoBlack whiteText']"}
-  (Session info: chrome=131.0.6778.69)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.16.1', revision: '9b4c83354e'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2037a52ca6b99a525449ff010e6ed964, findElement {using=xpath, value=//h2[@class='font24 latoBlack whiteText']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.69, chrome: {chromedriverVersion: 131.0.6778.69 (77e2244bbcda..., userDataDir: C:\Users\swati\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63784}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63784/devtoo..., se:cdpVersion: 131.0.6778.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 2037a52ca6b99a525449ff010e6ed964
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy25.isDisplayed(Unknown Source)
-	at com.stepDefinition.SortByHotels.user_is_navigated_to_review_your_booking(SortByHotels.java:96)
-	at ✽.User is navigated to Review your Booking(file:///C:/Users/swati/git/repository45/MakeMyTrip/./src/test/resources/featureFiles/ReviewHotelFromMap.feature:19)
-]]>
-</failure>
+<testcase classname="Review Booking Hotel from map" name="Validate user is able to locate hotel from map and book hotel" time="32.477">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
@@ -220,10 +164,10 @@ And select one option for the areas.........................................pass
 Then click on view list and navigate to the list of hotels..................passed
 Then select hotel name to view details of the hotel.........................passed
 And Click on BOOK THIS NOW button...........................................passed
-When User is navigated to Review your Booking...............................failed
+When User is navigated to Review your Booking...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Hotels" name="Validate user is able to select Hotels from Hotels page by filtering rating" time="21.515">
+<testcase classname="Hotels" name="Validate user is able to select Hotels from Hotels page by filtering rating" time="21.109">
 <system-out><![CDATA[
 Given Browser is launched and navigate to the URL...........................passed
 When User is able to click on Hotels link...................................passed
